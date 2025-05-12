@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static & Dynamic Tokens | Authentication Security</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Initialization Screen -->
+    <div class="init-screen">
+        <div class="init-tokens">
+            <i class="fas fa-key init-token"></i>
+            <i class="fas fa-shield-alt init-token"></i>
+            <i class="fas fa-lock init-token"></i>
+            <i class="fas fa-fingerprint init-token"></i>
+            <i class="fas fa-user-shield init-token"></i>
+        </div>
+        <div class="init-logo">
+            <svg width="120" height="120" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M12 3l7 4v5c0 5-3.5 9-7 9s-7-4-7-9V7l7-4z"/>
+            </svg>
+        </div>
+        <div class="init-text">Initializing Security Protocol</div>
+        <div class="init-progress">
+            <div class="init-progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="security-pattern"></div>
+        <div class="floating-tokens">
+            <i class="fas fa-key"></i>
+            <i class="fas fa-shield-alt"></i>
+            <i class="fas fa-lock"></i>
+            <i class="fas fa-fingerprint"></i>
+            <i class="fas fa-user-shield"></i>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="logo-ring"></div>
+                </div>
+                <span>Token Security</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#discussion">Discussion</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#reflections">Reflections</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Understanding Authentication Security</h1>
+            <p class="subtitle fade-in">Exploring the world of Static and Dynamic Tokens in modern cybersecurity</p>
+            <div class="hero-icons">
+                <div class="icon-wrapper">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Security</span>
+                </div>
+                <div class="icon-wrapper">
+                    <i class="fas fa-key"></i>
+                    <span>Tokens</span>
+                </div>
+                <div class="icon-wrapper">
+                    <i class="fas fa-clock"></i>
+                    <span>Time-based</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discussion Section -->
+    <section id="discussion" class="discussion">
+        <div class="container">
+            <h2 class="section-title">Understanding Token Types</h2>
+            <div class="token-comparison">
+                <div class="token-card static card-animate">
+                    <div class="mirror-reflection"></div>
+                    <div class="card-icon">
+                        <svg width="32" height="32" fill="none" stroke="#1a73e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <h3>Static Tokens</h3>
+                    <p>Fixed credentials that remain unchanged until manually updated</p>
+                    <ul>
+                        <li><svg width="16" height="16" fill="none" stroke="#34a8a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Passwords</li>
+                        <li><svg width="16" height="16" fill="none" stroke="#34a8a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> API Keys</li>
+                        <li><svg width="16" height="16" fill="none" stroke="#34a8a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Access Tokens</li>
+                    </ul>
+                </div>
+                <div class="token-card dynamic card-animate">
+                    <div class="mirror-reflection"></div>
+                    <div class="card-icon">
+                        <svg width="32" height="32" fill="none" stroke="#1a73e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Dynamic Tokens</h3>
+                    <p>Temporary credentials that change automatically over time</p>
+                    <ul>
+                        <li><svg width="16" height="16" fill="none" stroke="#34a8a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> One-Time Passwords (OTP)</li>
+                        <li><svg width="16" height="16" fill="none" stroke="#34a8a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Time-based Tokens</li>
+                        <li><svg width="16" height="16" fill="none" stroke="#34a8a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Session Tokens</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="article-grid">
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="https://cdn.hexnode.com/blogs/wp-content/uploads/2021/07/29201741/Secure-token-workflow-without-UEM.png" alt="Article 1">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Best Practices in Token Management</h3>
+                        <p>Learn about secure token storage and rotation strategies</p>
+                        <a href="https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="https://lwfiles.mycourse.app/grc-cpe-public/17a7d4c2673536fa36d4356bc2144042.jpeg" alt="Article 2">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Multi-Factor Authentication</h3>
+                        <p>Understanding the role of tokens in MFA systems</p>
+                        <a href="https://pages.nist.gov/800-63-3/sp800-63b.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="https://www.globaltechcouncil.org/wp-content/uploads/2021/07/12-Emerging-Cybersecurity-trends-in-2021-1.jpg" alt="Article 3">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Future of Authentication</h3>
+                        <p>Emerging trends in token-based security</p>
+                        <a href="https://fidoalliance.org/" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflections Section -->
+    <section id="reflections" class="reflections">
+        <div class="container">
+            <h2 class="section-title">Developer Reflections</h2>
+            <div class="reflection-content">
+                <div class="reflection-card">
+                    <p>As a developer passionate about security, understanding the nuances between static and dynamic tokens has been crucial in building robust authentication systems. The evolution of token-based security continues to shape how we protect digital assets and user identities.</p>
+                    <div class="key-lessons">
+                        <h3>Key Lessons</h3>
+                        <ul>
+                            <li><i class="fas fa-lightbulb"></i> Balance between security and user experience</li>
+                            <li><i class="fas fa-lightbulb"></i> Importance of proper token lifecycle management</li>
+                            <li><i class="fas fa-lightbulb"></i> Role of tokens in modern authentication flows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="img/sherwin.jpg" alt="Sherwin Valledor">
+                    <div class="profile-ring"></div>
+                </div>
+                <div class="bio">
+                    <h3>Sherwin Valledor</h3>
+                    <p class="title">Software Developer & Security Enthusiast</p>
+                    <p>Passionate about building secure and scalable applications. This project was born from a desire to share knowledge about authentication security and help developers make informed decisions about token implementation.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Token Security</span>
+                </div>
+                <p>&copy; 2024 Sherwin Valledor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Shield Button -->
+    <button class="floating-shield-btn" id="openShieldModal" aria-label="Open Security Animation">
+        <svg width="32" height="32" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 5-3.5 9-7 9s-7-4-7-9V7l7-4z"/></svg>
+    </button>
+    <!-- Shield Modal -->
+    <div class="shield-modal" id="shieldModal">
+        <div class="shield-modal-content">
+            <button class="shield-modal-close" id="closeShieldModal" aria-label="Close">
+                &times;
+            </button>
+            <svg width="64" height="64" fill="none" stroke="#1a73e8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 5-3.5 9-7 9s-7-4-7-9V7l7-4z"/></svg>
+            <h3>Security Fun Fact</h3>
+            <p style="margin-top:0.5rem;">Did you know? <span class="modal-fact-anim">Dynamic tokens</span> (like OTPs) are much harder to steal than static passwords, making your accounts far more secure!</p>
+            <div style="margin-top:1.2rem;">
+                <svg width="48" height="48" fill="none" stroke="#34a8a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
